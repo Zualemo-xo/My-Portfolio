@@ -1,0 +1,741 @@
+<!-- Main navigation -->
+    <!DOCTYPE html>
+    <html>
+    <head> 
+        <title>Maheysh's Portfolio</title>
+        <!-- <link rel="icon" type="image/png" href="https://img.icons8.com/dusk/64/000000/monitor.png" width=16px> -->
+
+        <!-- For favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+
+
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Google Fonts -->
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"> -->
+        <link href="https://fonts.googleapis.com/css?family=Cormorant Garamond&display=swap" rel="stylesheet">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
+    </head>
+    <body>
+        <style type="text/css">
+        /*Text font needed*/
+                    body {
+            font-family: 'Cormorant Garamond';font-size: 22px;
+        }
+            /* Required for full background image use ctrl+/to comment*/
+
+            html,
+            body,
+            header,
+            #intro-section {
+                height: 100%;
+            }
+
+            @media (max-width: 740px) {
+                html,
+                body,
+                header,
+                #intro-section {
+                    height: 100vh;
+                }
+            }
+
+            .top-nav-collapse, .page-footer {
+                //background-color: #563e91 !important;
+                background-color: #3D72A4 !important;
+                
+            }
+
+            .navbar:not(.top-nav-collapse) {
+                background: transparent !important;
+            }
+
+            @media (max-width: 991px) {
+                .navbar:not(.top-nav-collapse) {
+                    background: #563e91 !important;
+                }
+            }
+
+            .rgba-gradient {
+                background: rgba(35, 7, 77, 0.6);
+                /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, rgba(24, 103, 501, 0.6), rgba(35, 7, 77, 0.6));
+                /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, rgba(24, 103, 501, 0.6), rgba(35, 7, 77, 0.6));
+                /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            }
+
+
+            .img-gradient:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                display: inline-block;
+                /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(220, 66, 37, 0.5)), color-stop(100%, rgba(0, 47, 75, 0.5)));
+                /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+                /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+                /* Opera 11.10+ */
+                /* IE10+ */
+                background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 47, 75, 0.5)), to(rgba(220, 66, 37, 0.5)));
+                background: linear-gradient(to bottom, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+                /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000', GradientType=0);
+                /* IE6-9 */
+            }
+
+            img{ max-width:100%;}
+
+.gallery_box li{ width:33.333333%; max-width: 100% ; display:inline-block; float: left; text-align: center; overflow: hidden;    position: relative;}
+.gallery_box{ padding:0;display: flow-root;}
+
+.gallery_box li:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.gallery_box li img{-webkit-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;}
+.gallery_box li:nth-child(even) {
+    height: 304px;
+}
+.gallery_box li:nth-child(odd) {
+    height: 438px; 
+}
+.gallery_box li:nth-child(odd) .box_data{ background:rgba(0,0,0,0.17) }
+.gallery_box li:nth-child(even) .box_data{ background:rgba(0,0,0,0.27) }
+.gallery_box .box_data{ position:absolute; top: 0; left: 0; right:0; bottom:0; color:#fff;}
+.gallery_box .box_data span{ position:absolute; top: 50%; transform: translateY(-50%); left:0 ; right:0; font-size:24px;}
+.gallery_box li:hover .box_data{ background:rgba(0,0,0,0.00)}
+
+        </style>
+        <header>
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+                <div class="container">
+                    <a class="navbar-brand" href="#">My Portfolio</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto smooth-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#intro">Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" data-offset="90">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects" data-offset="90">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery" data-offset="90">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials" data-offset="30">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#articles" data-offset="90">Blogs</a>
+                        </li>
+                        
+                    </ul>
+                    <!-- Social Icon  -->
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.linkedin.com/in/maheysh-v-b29160191/" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.youtube.com/channel/UC9ao9SHJQQ8EBRafknd2SKQ?view_as=subscriber">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.facebook.com/profile.php?id=100014314307207" target="_blank">
+                                <i class="fab fa-facebook light-green-text-2"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://twitter.com/Maheysh4" target="_blank">
+                                <i class="fab fa-twitter light-green-text-2"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com/zualemo_x.0.7._/?hl=en" target="_blank">
+                                <i class="fab fa-instagram light-green-text-2"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://mindimes.blogspot.com/" target="_blank">
+                                <i class="fab fa-blogger"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar -->
+        <!-- Full Page Intro -->
+        <div id="intro-section" class="view">
+            <video class="video-intro" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" playsinline
+            autoplay muted loop>
+            <source src="https://mdbootstrap.com/img/video/animation.mp4" type="video/mp4">
+            </video>
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+                <!-- Content -->
+                <div class="container px-md-3 px-sm-0">
+                    <!--Grid row-->
+                    <div class="row wow fadeIn">
+                        <!--Grid column-->
+                        <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
+                            <h3 class="display-3 font-weight- font-italic  white-text mb-0 pt-md-5 pt-5">V Maheysh</h3>
+
+                            <div class="avatar mx-auto mb-4 text-center">
+                            <img src="assets/images/My Pic.jpeg" class="rounded-circle img-fluid mx-auto mb-4" width="150px"
+                            alt="Third sample avatar image">
+                            </div>
+
+                            
+                            <hr class="hr-light my-4 w-75">
+                            <h4 class="subtext-header mt-2 mb-4">A flair in Coding , Astronomy , Poetry .</h4>
+                            <a href="#!" class="btn btn-rounded btn-outline-white">
+                                <i class="fa fa-home"></i> Checkout
+                            </a>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </div>
+                <!-- Content -->
+            </div>
+            <!-- Mask & flexbox options-->
+        </div>
+        <!-- Full Page Intro -->
+    </header>
+
+    <!-- Main layout -->
+    <main>
+
+        <!--Section: about assets/images/11333cr.jpg-->
+        <section id="about" class="py-5 " style="background-image: url('assets/images/blackbg.jpg');background-size: cover;background-position: center;background-attachment: fixed;">
+            
+            <!-- Container -->
+            <div class="container">
+                <!-- Section heading -->
+                <h2 class="h1-responsive font-weight-bold text-center mb-5 text-white">About Me</h2>
+                <!-- Section description -->
+                <p class=" text-center w-responsive mx-auto mb-5 text-white" style="opacity: 100;font-size: 24px;letter-spacing: 0.5px;z-index:1;">Born and brought up in Singapore,my schooling began at Chongfu Primary School.After returning to India,my education continued at SBOA school and Junior College till my graduation . Presently,I am taking up a B. Tech Computer Science course in Vit University, Chennai .</p>
+
+                <!-- <p class=" text-center w-responsive mx-auto mb-5 text-white" style="opacity : 100;font-size: 24px;letter-spacing: 0.5px;">I am an avid learner who likes to explore various domains , enrich my knowledge and apply it to solve real-world problems.</p> -->
+                <p class=" text-center w-responsive mx-auto mb-5 text-white" style="opacity : 100;font-size: 24px;letter-spacing: 0.5px;">Beginning with C++ in my schooling days, my passion for Computer Science is always ablaze! I am currently exploring various domains including Competitive Programming, Front-End Development, Back-End Development, Game Development and Machine Learning to further broaden my exposure.  </p>
+                
+
+                <p class=" text-center w-responsive mx-auto mb-5 text-white" style="opacity : 100;font-size: 24px;letter-spacing: 0.5px;">My interests include getting lost in the pages of a storybook , Unlocking the secrets of the universe by astronomy, poetry and coding of all sorts! </p>
+
+ 
+                
+
+            </div>
+            <!-- Container -->
+
+        </section>
+        <!--Section: about-->
+
+        <!--Section: projects-->
+        <!-- <section id="projects" class="text-center py-5 " style="background-color:#000000;">
+
+            
+            <div class="container">
+
+                
+                <h2 class="h1-responsive font-weight-bold mb-5 text-white">My Software Experience</h2>
+            
+
+                <style>
+                    .overlay .mask:hover { opacity: 100.0; }
+                </style>
+                <div class="view overlay col-lg-3 col-md-12 mb-lg-0 mb-4">
+                <img src="assets/icon/icons8-c++-96.png" class="img-fluid " alt="">
+                <div class="mask flex-center rgba-black-strong text-center">
+                    <p class="white-text text-center">Strong overlay</p>
+                </div>
+                </div>
+
+                
+            </div>
+            <!-- Container -->
+        
+        </section> 
+
+
+        <!--Section: Technologies I've Worked On-->
+        <!-- <section id="Technologies I've Worked On" style="background-color:#000000;"> -->
+        
+        <div class="text-center container-fluid" style="background-color:#000000;">
+            <h2 class="h1-responsive font-weight-bold mb-5 text-white">Technologies I've Worked On</h2>
+        <div class="row my-5" style="background-color:#000000;">
+        <div class="col container" style="background-color:#000000;">
+          <img src="https://cdn.iconscout.com/icon/free/png-512/c-programming-569564.png" alt="C language" height="100px">
+          <div class="overlay">
+            <div class="blue-text"><p></p><h3>C</h3><p></p></div>
+          </div>
+        </div>
+        <div class="col container">
+          <img src="https://img.icons8.com/officel/160/000000/php-logo.png" alt="PHP" height="100px">
+          <div class="overlay">
+             <div class="yellow-text"><p></p><h3>PHP</h3><p></p></div>
+          </div>
+        </div>
+        <div class="col container">
+          <img src="https://img.icons8.com/color/96/000000/html-5.png" alt="HTML 5" height="100px">
+          <div class="overlay">
+             <div class="orange-text"><p></p><h3>HTML-5</h3><p></p></div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-5">
+        <div class="col container">
+          <img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-opencode-css-8.png" alt="CSS 3" height="100px">
+          <div class="overlay">
+             <div class="blue-text"><p></p><h3>CSS 3</h3><p></p></div>
+          </div>
+        </div>
+        <div class="col container">
+          <img src="https://img.icons8.com/color/96/000000/bootstrap.png" alt="Bootstrap" height="100px">
+          <div class="overlay">
+             <div class="purple-text"><p></p><h3>Bootstrap</h3><p></p></div>
+          </div>
+        </div>
+        <div class="col container">
+            <img src="https://img.icons8.com/color/2x/microsoft-sql-server.png" alt="MySql" height="100px">
+          <div class="overlay">
+             <div class="white-text"><p></p><h3>SQL</h3><p></p></div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-5">
+        <div class="col container">
+          <img src="https://img.icons8.com/color/96/000000/python.png" alt="python" height="100px">
+          <div class="overlay">
+             <div class="yellow-text"><p></p><h3>Python</h3><p></p></div>
+          </div>
+        </div>
+        <div class="col container">
+          <img src="https://img.icons8.com/color/96/000000/c-plus-plus-logo.png" alt="C++" height="100px">
+          <div class="overlay">
+             <div class="blue-text"><p></p><h3>C++</h3><p></p></div>
+          </div>
+        </div>
+        <div class="col container">
+          <img src="assets/icon/iconfinder_Unity_3D_617623.png" alt="Unity" height="100px">
+          <div class="overlay">
+            <div class="orange-text"><p></p><h3>Unity</h3><p></p></div>
+          </div>
+        </div>
+      </div>
+
+        
+        <!--Section: Technologies I've Worked On-->
+        <!--Section: articles-->
+<section id="articles" class="text-center py-5" style="background-color:#000000;">
+
+    <!-- Container -->
+    <div class="container ">
+
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold mb-5 text-white">Projects I've Worked On</h2>
+
+        <!--Grid row-->
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-12 mb-4">
+
+                <!-- Card Narrower -->
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade">
+                        <img class="card-img-top" src="assets/images/SA.PNG"
+                        alt="Card image cap">
+                        <a>
+                            <div class=""></div>
+                        </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade">
+
+                       <!-- Title -->
+                        <h4 class="pink-text pb-2 pt-1 font-weight-bold card-title"><i class="fa fa-cutlery"></i>Sentiment Analysis of COVID-19 Tweets</h4>
+                        
+                        
+                        <!-- Text -->
+                        <p class="card-text">A collaborative project to analyze and visualize the sentiments of twitter users
+                            during the COVID-19 Pandemic. </p>
+                        <!-- Button -->
+                        <a href="https://www.youtube.com/watch?v=PnQehXN_RpU"class="btn btn-unique" target="_blank">Check it out</a>
+
+                    </div>
+
+                </div>
+                <!-- Card Narrower -->
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+
+                <!-- Card Narrower -->
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade">
+                        <img class="card-img-top" src="assets/images/DBMSPR.PNG"
+                        alt="Card image cap">
+                        <a>
+                            <div class=""></div>
+                        </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade">
+
+                        <!-- Title -->
+                        <h4 class="pink-text pb-2 pt-1 font-weight-bold card-title"><i class="fa fa-cutlery"></i>E-Voting Management System</h4>
+                        <!-- Title -->
+                        <!-- Text -->
+                        <p class="card-text">An online voting management system developed with the intent of providing hassle-free elections.</p>
+                        <!-- Button -->
+                        <a class="btn btn-unique" target="_blank">Check it out</a>
+
+                    </div>
+
+                </div>
+                <!-- Card Narrower -->
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+
+                <!-- Card Narrower -->
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade">
+                        <img class="card-img-top" src="assets/images/XSF.PNG"
+                        alt="Card image cap">
+                        <a>
+                            <div class=""></div>
+                        </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade">
+
+                        <!-- Title -->
+                        <h4 class="pink-text pb-2 pt-1 font-weight-bold card-title"><i class="fa fa-cutlery">
+                        </i>Xtreme Street Fight</h4>
+                    
+                        <!-- Text -->
+                        <p class="card-text">An Augmented Reality(AR) application brainstormed and developed during an hackathon in VIT Chennai.</p>
+                        <!-- Button -->
+                        <a class="btn btn-unique" target="_blank">Check it out</a>
+
+                    </div>
+
+                </div>
+                <!-- Card Narrower -->
+
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+    </div>
+    <!-- Container -->
+
+</section>
+<!--Section: articles-->
+        <!--Section: My interests-->
+        
+        <section id="My interests" class=" py-5" style="background-color:#000000;">
+        <h1 class=" text-white text-center h1-responsive font-weight-bold  mb-5 " >My Interests</h1>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <video class="d-block w-100" src="assets/videos/Coding.mp4" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" alt="First slide" type="video/mp4" playsinline
+            autoplay muted loop>
+            <source src="assets/videos/Coding.mp4" type="video/mp4">
+            </video>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Coding</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+            <video class="d-block w-100"  poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" alt="First slide"                       type="video/mp4" playsinline autoplay muted loop>
+            <source src="assets/videos/astronomy.mp4" type="video/mp4">
+            </video>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Astronomy</h5>
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+            <video class="d-block w-100"  poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" alt="First slide"                       type="video/mp4" playsinline autoplay muted loop>
+            <source src="assets/videos/Poetry.mp4" type="video/mp4">
+            </video>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Poetry</h5>
+                </div>
+        </div>
+        
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        </div>
+        </section>
+        <!--Section: My interests-->
+
+        <!--Section: gallery-->
+        <section id="gallery" class="text-center py-5 " style="background-color:#000000;">
+
+            <!-- Container -->
+            <div class="container">
+
+                <!-- Section heading -->
+                <h2 class="h1-responsive font-weight-bold mb-5 text-white">A glimpse into my worldview</h2>
+                <!-- Section description -->
+                <!-- <p class="grey-text w-responsive mx-auto mb-5">Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit est laborum.</p> -->
+
+                <!-- <ul class="gallery_box">
+    <li>
+        <a href="https://github.com/Zualemo-xo?tab=repositories"><img src="https://picsum.photos/600/700/?random">
+        <div class="box_data">
+            <span>Project 1</span>
+        </div></a>
+    </li>
+        <li>
+        <a href="https://github.com/Zualemo-xo?tab=repositories"><img src="https://picsum.photos/600/701/?random">
+        <div class="box_data">
+            <span>Project 2</span>
+        </div></a>
+    </li>
+        <li>
+        <a href="https://github.com/Zualemo-xo?tab=repositories"><img src="https://picsum.photos/600/702/?random">
+        <div class="box_data">
+            <span>Project 3</span>
+        </div></a>
+    </li>
+            <li>
+        <a href="https://github.com/Zualemo-xo?tab=repositories"><img src="https://picsum.photos/600/703/?random">
+        <div class="box_data">
+            <span>Project 4</span>
+        </div></a>
+    </li>
+            <li style="position: relative;
+    top: -134px;">
+        <a href="https://github.com/Zualemo-xo?tab=repositories"><img src="https://picsum.photos/600/704/?random">
+        <div class="box_data">
+            <span>Project 5</span>
+        </div></a>
+    </li>
+            <li>
+        <a href="#0"><img src="https://picsum.photos/600/705/?random">
+        <div class="box_data">
+            <span>Project 6</span>
+        </div></a>
+    </li>
+    
+</ul> -->
+     <ul class="gallery_box">
+    <li>
+        <a href="#0"><img src="assets/myimages/vitbest.jpeg">
+        <div class="box_data">
+            
+        </div></a>
+    </li>
+        <li>
+        <a href="#0"><img src="assets/myimages/Code.jpeg">
+        <div class="box_data">
+            
+        </div></a>
+    </li>
+        <li>
+        <a href="#0"><img src="assets/myimages/Cake.jpeg">
+        <div class="box_data">
+            
+        </div></a>
+    </li>
+            <li>
+        <a href="#0"><img src="assets/myimages/Moon.jpeg">
+        <div class="box_data">
+            
+        </div></a>
+    </li>
+            <li style="position: relative;
+    top: -134px;">
+        <a href="#0"><img src="assets/myimages/Lappy.jpeg">
+        <div class="box_data">
+            
+        </div></a>
+    </li>
+            <li>
+        <a href="#0"><img src="assets/myimages/Band.jpeg">
+        <div class="box_data">
+            
+        </div></a>
+    </li>
+    
+</ul> 
+
+
+
+
+</div>
+
+<!-- Container -->
+
+</section>
+<!--Section: gallery-->
+
+<!--Section: testimonials-->
+
+<!--Section: testimonials-->
+
+
+
+
+
+
+
+
+
+<!--Section: call to action-->
+
+<!--Section: call to action-->
+
+<!--Section: articles-->
+
+<!--Section: articles-->
+
+<!--Section: contact-->
+
+<!--Section: contact-->
+
+</main>
+<!--Main layout-->
+
+<!-- Footer -->
+<footer class="page-footer font-small pt-4">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+                <a class="btn-floating btn-fb mx-1">
+                    <i class="fab fa-facebook"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-tw mx-1">
+                    <i class="fab fa-twitter"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-gplus mx-1">
+                    <i class="fab fa-google-plus"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-li mx-1">
+                    <i class="fab fa-linkedin"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-dribbble mx-1">
+                    <i class="fab fa-dribbble"> </i>
+                </a>
+            </li>
+        </ul>
+        <!-- Social buttons -->
+
+    </div>
+    <!-- Footer Elements -->
+    
+    <!-- Copyright -->
+   <br>
+   
+    <!-- hitwebcounter Code START -->
+    <div class="text-center">
+        <h5>Total Pageviews:</h5>
+        
+        <a href="https://www.hitwebcounter.com" target="_blank">
+        <img src="https://hitwebcounter.com/counter/counter.php?page=7442936&style=0038&nbdigits=6&type=page&initCount=0" title="Web            Counter" Alt="counter free"   border="0" >
+        </a> 
+                <h5>Unique Pageviews:</h5>
+
+        <!-- hitwebcounter Code START -->
+        <a href="https://www.hitwebcounter.com" target="_blank">
+        <img src="https://hitwebcounter.com/counter/counter.php?page=7442537&style=0009&nbdigits=6&type=ip&initCount=0" title="Web Counter" Alt="counter free"   border="0" >
+        </a>   
+        <h5>©V.Maheysh</h5>
+    </div>                                   
+           
+<br>
+  
+
+
+</footer>
+<!-- Footer -->
+</body>
+</html>
