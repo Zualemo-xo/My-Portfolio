@@ -1,7 +1,7 @@
 <!-- Main navigation -->
     <!DOCTYPE html>
     <html>
-    <head> 
+    <head>
         <title>Maheysh's Portfolio</title>
         <!-- <link rel="icon" type="image/png" href="https://img.icons8.com/dusk/64/000000/monitor.png" width=16px> -->
         <meta content="A website to describe about V.Maheysh and his accumen"/>
@@ -12,7 +12,7 @@
         <link rel="manifest" href="/site.webmanifest">
 
 
-        
+
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
         <!-- Google Fonts -->
         <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"> -->
@@ -35,7 +35,7 @@
         <style type="text/css">
         /*Text font needed*/
                     body {
-            font-family: 'Cormorant Garamond';font-size: 22px;
+            font-family: 'Cormorant Garamond';font-size: 25px;
         }
             /* Required for full background image use ctrl+/to comment*/
 
@@ -44,6 +44,7 @@
             header,
             #intro-section {
                 height: 100%;
+                scroll-behavior: smooth;
             }
 
             @media (max-width: 740px) {
@@ -58,7 +59,7 @@
             .top-nav-collapse, .page-footer {
                 //background-color: #563e91 !important;
                 background-color: #3D72A4 !important;
-                
+
             }
 
             .navbar:not(.top-nav-collapse) {
@@ -123,7 +124,7 @@
     height: 304px;
 }
 .gallery_box li:nth-child(odd) {
-    height: 438px; 
+    height: 438px;
 }
 .gallery_box li:nth-child(odd) .box_data{ background:rgba(0,0,0,0.17) }
 .gallery_box li:nth-child(even) .box_data{ background:rgba(0,0,0,0.27) }
@@ -131,12 +132,60 @@
 .gallery_box .box_data span{ position:absolute; top: 50%; transform: translateY(-50%); left:0 ; right:0; font-size:24px;}
 .gallery_box li:hover .box_data{ background:rgba(0,0,0,0.00)}
 
+
+
+
+
+
+
+
+.image {
+display: block;
+width: 100%;
+height: auto;
+}
+
+.overlay {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+height: 100%;
+width: 100%;
+opacity: 0;
+transition: .7s ease;
+background-color: #000000;
+}
+
+.col:hover .overlay {
+opacity: 1;
+}
+
+.text {
+
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
+}
+a[href]{
+transition: all .9s ease;
+transition-duration: 5s;
+-webkit-transition: all .9s ease;
+}
         </style>
         <header>
             <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" >
                 <div class="container">
-                    <a class="navbar-brand" href="#">My Portfolio</a>
+                    <a class="navbar-brand" href="https://mindimes.blogspot.com/" target="_blank">
+                    <img src="assets/icon/apple-touch-icon.png" class="rounded-circle img-fluid mx-auto mb-4" width="25px"
+                    alt="avatar image"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
                     aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -144,25 +193,23 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav mr-auto smooth-scroll">
                         <li class="nav-item">
-                            <a class="nav-link" href="#intro">Home
+                            <a class="nav-link" href="#intro-section">Home
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about" data-offset="90">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects" data-offset="90">Projects</a>
+                            <a class="nav-link" href="#Technologies I've Worked On" data-offset="90">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Projects I've Worked On" data-offset="90">Projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#gallery" data-offset="90">Gallery</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#testimonials" data-offset="30">Testimonials</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#articles" data-offset="90">Blogs</a>
-                        </li>
-                        
+
+
                     </ul>
                     <!-- Social Icon  -->
                     <ul class="navbar-nav nav-flex-icons">
@@ -199,7 +246,7 @@
                             </a>
                         </li>
                     </ul>
-                    
+
                 </div>
             </div>
         </nav>
@@ -218,16 +265,93 @@
                     <div class="row wow fadeIn">
                         <!--Grid column-->
                         <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
-                            <h3 class="display-3 font-weight- font-italic  white-text mb-0 pt-md-5 pt-5">V Maheysh</h3>
+                            <h3 class="display-3 font-weight- font-italic  white-text mb-0 pt-md-5 pt-5" >V Maheysh</h3>
 
                             <div class="avatar mx-auto mb-4 text-center">
                             <img src="assets/images/My Pic.jpeg" class="rounded-circle img-fluid mx-auto mb-4" width="150px"
                             alt="Third sample avatar image">
                             </div>
 
-                            
+
                             <hr class="hr-light my-4 w-75">
-                            <h4 class="subtext-header mt-2 mb-4">A flair in Coding , Astronomy , Poetry .</h4>
+                            <!-- <h4 class="subtext-header mt-2 mb-4">A flair in Coding , Astronomy , Poetry .</h4> -->
+
+
+
+
+
+                            <script>
+                              var TxtRotate = function(el, toRotate, period) {
+                            this.toRotate = toRotate;
+                            this.el = el;
+                            this.loopNum = 0;
+                            this.period = parseInt(period, 10) || 2000;
+                            this.txt = '';
+                            this.tick();
+                            this.isDeleting = false;
+                          };
+
+                          TxtRotate.prototype.tick = function() {
+                            var i = this.loopNum % this.toRotate.length;
+                            var fullTxt = this.toRotate[i];
+
+                            if (this.isDeleting) {
+                              this.txt = fullTxt.substring(0, this.txt.length - 1);
+                            } else {
+                              this.txt = fullTxt.substring(0, this.txt.length + 1);
+                            }
+
+                            this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+                            var that = this;
+                            var delta = 300 - Math.random() * 100;
+
+                            if (this.isDeleting) { delta /= 2; }
+
+                            if (!this.isDeleting && this.txt === fullTxt) {
+                              delta = this.period;
+                              this.isDeleting = true;
+                            } else if (this.isDeleting && this.txt === '') {
+                              this.isDeleting = false;
+                              this.loopNum++;
+                              delta = 500;
+                            }
+
+                            setTimeout(function() {
+                              that.tick();
+                            }, delta);
+                          };
+
+                          window.onload = function() {
+                            var elements = document.getElementsByClassName('txt-rotate');
+                            for (var i=0; i<elements.length; i++) {
+                              var toRotate = elements[i].getAttribute('data-rotate');
+                              var period = elements[i].getAttribute('data-period');
+                              if (toRotate) {
+                                new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                              }
+                            }
+                            // INJECT CSS
+                            var css = document.createElement("style");
+                            css.type = "text/css";
+                            css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+                            document.body.appendChild(css);
+                          };
+                            </script>
+
+                          <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+                          <h1>A flair in
+                            <span
+                               class="txt-rotate"
+                               data-period="2000"
+                               data-rotate='[ "Coding.", "Poetry.", "Astronomy.", "Oratory." ]'></span>
+                          </h1>
+
+
+
+
+
+
                             <a href="#!" class="btn btn-rounded btn-outline-white">
                                 <i class="fa fa-home"></i> Checkout
                             </a>
@@ -248,60 +372,36 @@
 
         <!--Section: about assets/images/11333cr.jpg-->
         <section id="about" class="py-5 " style="background-image: url('assets/images/blackbg.jpg');background-size: cover;background-position: center;background-attachment: fixed;">
-            
+
             <!-- Container -->
             <div class="container">
                 <!-- Section heading -->
                 <h2 class="h1-responsive font-weight-bold text-center mb-5 text-white">About Me</h2>
                 <!-- Section description -->
-                <p class=" text-center w-responsive mx-auto mb-5 text-white" style="opacity: 100;font-size: 24px;letter-spacing: 0.5px;z-index:1;">Born and brought up in Singapore,my schooling began at Chongfu Primary School.After returning to India,my education continued at SBOA school and Junior College till my graduation . Presently,I am taking up a B. Tech Computer Science course in Vit University, Chennai .</p>
+                <p class=" text-center w-responsive mx-auto mb-5 text-white" style="opacity: 100;font-size: 28px;letter-spacing: 0.5px;z-index:1;">Born and brought up in Singapore,my schooling began at Chongfu Primary School.After returning to India,my education continued at SBOA school and Junior College till my graduation . Presently,I am taking up a B. Tech Computer Science course in Vit University, Chennai .</p>
 
                 <!-- <p class=" text-center w-responsive mx-auto mb-5 text-white" style="opacity : 100;font-size: 24px;letter-spacing: 0.5px;">I am an avid learner who likes to explore various domains , enrich my knowledge and apply it to solve real-world problems.</p> -->
-                <p class=" text-center w-responsive mx-auto mb-5 text-white" style="opacity : 100;font-size: 24px;letter-spacing: 0.5px;">Beginning with C++ in my schooling days, my passion for Computer Science is always ablaze! I am currently exploring various domains including Competitive Programming, Front-End Development, Back-End Development, Game Development and Machine Learning to further broaden my exposure.  </p>
-                
+                <p class=" text-center w-responsive mx-auto mb-5 text-white" style="opacity : 100;font-size: 28px;letter-spacing: 0.5px;">Beginning with C++ in my schooling days, my passion for Computer Science is always ablaze! I am currently exploring various domains including Competitive Programming, Front-End Development, Back-End Development, Game Development and Machine Learning to further broaden my exposure.  </p>
 
-                <p class=" text-center w-responsive mx-auto mb-5 text-white" style="opacity : 100;font-size: 24px;letter-spacing: 0.5px;">My interests include getting lost in the pages of a storybook , Unlocking the secrets of the universe by astronomy, poetry and coding of all sorts! </p>
 
- 
-                
+                <p class=" text-center w-responsive mx-auto mb-5 text-white" style="opacity : 100;font-size: 28px;letter-spacing: 0.5px;">My interests include getting lost in the pages of a storybook , Unlocking the secrets of the universe by astronomy, poetry and coding of all sorts! </p>
+
+
+
 
             </div>
             <!-- Container -->
 
         </section>
-        <!--Section: about-->
 
-        <!--Section: projects-->
-        <!-- <section id="projects" class="text-center py-5 " style="background-color:#000000;">
 
-            
-            <div class="container">
-
-                
-                <h2 class="h1-responsive font-weight-bold mb-5 text-white">My Software Experience</h2>
-            
-
-                <style>
-                    .overlay .mask:hover { opacity: 100.0; }
-                </style>
-                <div class="view overlay col-lg-3 col-md-12 mb-lg-0 mb-4">
-                <img src="assets/icon/icons8-c++-96.png" class="img-fluid " alt="">
-                <div class="mask flex-center rgba-black-strong text-center">
-                    <p class="white-text text-center">Strong overlay</p>
-                </div>
-                </div>
-
-                
-            </div>
-            <!-- Container -->
-        
-        </section> 
 
 
         <!--Section: Technologies I've Worked On-->
-        <!-- <section id="Technologies I've Worked On" style="background-color:#000000;"> -->
-        
+        <section id="Technologies I've Worked On" class="text-center py-5" style="background-color:#000000;">
+          <!-- <div class="container"> -->
         <div class="text-center container-fluid" style="background-color:#000000;">
+
             <h2 class="h1-responsive font-weight-bold mb-5 text-white">Technologies I've Worked On</h2>
         <div class="row my-5" style="background-color:#000000;">
         <div class="col container" style="background-color:#000000;">
@@ -359,15 +459,16 @@
         <div class="col container">
           <img src="assets/icon/iconfinder_Unity_3D_617623.png" alt="Unity" height="100px">
           <div class="overlay">
-            <div class="orange-text"><p></p><h3>Unity</h3><p></p></div>
+            <div class="white-text"><p></p><h3>Unity</h3><p></p></div>
           </div>
         </div>
       </div>
+    <!-- </div> -->
+    </section>
 
-        
         <!--Section: Technologies I've Worked On-->
         <!--Section: articles-->
-<section id="articles" class="text-center py-5" style="background-color:#000000;">
+<section id="Projects I've Worked On" class="text-center py-5" style="background-color:#000000;">
 
     <!-- Container -->
     <div class="container ">
@@ -398,8 +499,8 @@
 
                        <!-- Title -->
                         <h4 class="pink-text pb-2 pt-1 font-weight-bold card-title"><i class="fa fa-cutlery"></i>Sentiment Analysis of COVID-19 Tweets</h4>
-                        
-                        
+
+
                         <!-- Text -->
                         <p class="card-text">A collaborative project to analyze and visualize the sentiments of twitter users
                             during the COVID-19 Pandemic. </p>
@@ -469,7 +570,7 @@
                         <!-- Title -->
                         <h4 class="pink-text pb-2 pt-1 font-weight-bold card-title"><i class="fa fa-cutlery">
                         </i>Xtreme Street Fight</h4>
-                    
+
                         <!-- Text -->
                         <p class="card-text">An Augmented Reality(AR) application brainstormed and developed during a hackathon in VIT Chennai.</p>
                         <!-- Button -->
@@ -492,7 +593,7 @@
 </section>
 <!--Section: articles-->
         <!--Section: My interests-->
-        
+
         <section id="My interests" class=" py-5" style="background-color:#000000;">
         <h1 class=" text-white text-center h1-responsive font-weight-bold  mb-5 " >My Interests</h1>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -501,7 +602,7 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
-        
+
         <div class="carousel-inner">
             <div class="carousel-item active">
             <video class="d-block w-100" src="assets/videos/Coding.mp4" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" alt="First slide" type="video/mp4" playsinline
@@ -520,7 +621,7 @@
                     <h5>Astronomy</h5>
                 </div>
             </div>
-            
+
             <div class="carousel-item">
             <video class="d-block w-100"  poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" alt="First slide"                       type="video/mp4" playsinline autoplay muted loop>
             <source src="assets/videos/Poetry.mp4" type="video/mp4">
@@ -529,7 +630,7 @@
                     <h5>Poetry</h5>
                 </div>
         </div>
-        
+
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -593,48 +694,48 @@
             <span>Project 6</span>
         </div></a>
     </li>
-    
+
 </ul> -->
      <ul class="gallery_box">
     <li>
         <a href="#0"><img src="assets/myimages/vitbest.jpeg">
         <div class="box_data">
-            
+
         </div></a>
     </li>
         <li>
         <a href="#0"><img src="assets/myimages/Code.jpeg">
         <div class="box_data">
-            
+
         </div></a>
     </li>
         <li>
         <a href="#0"><img src="assets/myimages/Cake.jpeg">
         <div class="box_data">
-            
+
         </div></a>
     </li>
             <li>
         <a href="#0"><img src="assets/myimages/Moon.jpeg">
         <div class="box_data">
-            
+
         </div></a>
     </li>
             <li style="position: relative;
     top: -134px;">
         <a href="#0"><img src="assets/myimages/Lappy.jpeg">
         <div class="box_data">
-            
+
         </div></a>
     </li>
             <li>
         <a href="#0"><img src="assets/myimages/Band.jpeg">
         <div class="box_data">
-            
+
         </div></a>
     </li>
-    
-</ul> 
+
+</ul>
 
 
 
@@ -711,28 +812,28 @@
 
     </div>
     <!-- Footer Elements -->
-    
+
     <!-- Copyright -->
    <br>
-   
+
     <!-- hitwebcounter Code START -->
     <div class="text-center">
         <h5>Total Pageviews:</h5>
-        
+
         <a href="https://www.hitwebcounter.com" target="_blank">
         <img src="https://hitwebcounter.com/counter/counter.php?page=7442936&style=0038&nbdigits=6&type=page&initCount=0" title="Web            Counter" Alt="counter free"   border="0" >
-        </a> 
+        </a>
                 <h5>Unique Pageviews:</h5>
 
         <!-- hitwebcounter Code START -->
         <a href="https://www.hitwebcounter.com" target="_blank">
         <img src="https://hitwebcounter.com/counter/counter.php?page=7442537&style=0009&nbdigits=6&type=ip&initCount=0" title="Web Counter" Alt="counter free"   border="0" >
-        </a>   
+        </a>
         <h5>©V.Maheysh</h5>
-    </div>                                   
-           
+    </div>
+
 <br>
-  
+
 
 
 </footer>
