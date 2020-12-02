@@ -351,9 +351,9 @@ transition-duration: 5s;
 
 
 
+
                             <a href="#about" class="btn btn-rounded btn-outline-white">
                                 <i class="fa fa-home"></i> <h4>Checkout</h4>
-
                             </a>
                         </div>
                         <!--Grid column-->
@@ -574,7 +574,7 @@ transition-duration: 5s;
                         <!-- Text -->
                         <p class="card-text">An Augmented Reality(AR) application brainstormed and developed during a hackathon in VIT Chennai.</p>
                         <!-- Button -->
-                        <a class="btn btn-unique" href="https://github.com/Zualemo-xo/Xtreme-Street-Fight" target="_blank">Check it out</a>
+                        <a class="btn btn-unique" target="_blank">Check it out</a>
 
                     </div>
 
@@ -767,8 +767,178 @@ transition-duration: 5s;
 
 <!--Section: articles-->
 
+<script>
+function ValidateEmail()
+{
+var emailz=document.getElementById("contact-email");
+var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+if(emailz.value.match(mailformat))
+{
+//alert("Valid email address!");
+//document.form1.text1.focus();
+
+}
+else
+{
+
+alert("You have entered an invalid email address!");
+document.getElementById("contact-email").focus();
+
+}
+}
+</script>
+<!--Section: contact-->
+<!--Section: contact-->
+<section id="contact" class="py-5" style="background-color:#000000;">
+
+    <div class="container text-white">
+
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold text-center mb-5">Contact Me</h2>
+        <!-- Section description -->
+        <p class="text-center w-responsive mx-auto mb-5">Feel free to reach out and know more about me through the folowing platforms. A message to directly contact me is welcome as well ! </p>
+        <ul class="navbar-nav nav-flex-icons list-group-horizontal">
+            <li class="nav-item flex-fill">
+                <a class="nav-link" href="https://www.linkedin.com/in/maheysh-v-b29160191/" target="_blank">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+            </li>
+
+            <li class="nav-item flex-fill">
+                <a class="nav-link" href="https://www.youtube.com/channel/UC9ao9SHJQQ8EBRafknd2SKQ?view_as=subscriber">
+                    <i class="fab fa-youtube fa-2x"></i>
+                </a>
+            </li>
+
+            <li class="nav-item flex-fill">
+                <a class="nav-link" href="https://www.facebook.com/profile.php?id=100014314307207" target="_blank">
+                    <i class="fab fa-facebook light-green-text-2 fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav-item flex-fill">
+                <a class="nav-link" href="https://twitter.com/Maheysh4" target="_blank">
+                    <i class="fab fa-twitter light-green-text-2 fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav-item flex-fill">
+                <a class="nav-link" href="https://www.instagram.com/zualemo_x.0.7._/?hl=en" target="_blank">
+                    <i class="fab fa-instagram light-green-text-2 fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav-item flex-fill">
+                <a class="nav-link" href="https://mindimes.blogspot.com/" target="_blank">
+                    <i class="fab fa-blogger fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-9 mb-md-0 mb-5">
+<!-- action="https://script.google.com/macros/s/AKfycbxbkGks4WwX8hn0RFFRce6M_SIRvSYt8e9uzWEe/exec" -->
+                <form id="gform" method="POST" class="gform pure-form pure-form-stacked" data-email="from_email@example.com"
+                  action="https://script.google.com/macros/s/AKfycbxbkGks4WwX8hn0RFFRce6M_SIRvSYt8e9uzWEe/exec">
+
+                    <!-- Grid row -->
+                    <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="contact-name" name="contact-name"class="form-control  text-white" required>
+                                <label for="contact-name" class="text-white"><h4>Your name</h4></label>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                              <!-- onblur="ValidateEmail()" -->
+                                <input type="email" id="contact-email" name="contact-email" class="form-control  text-white" required>
+                                <label for="contact-email" class="text-white"><h4>Your email</h4></label>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+
+                    <!-- Grid row -->
+                    <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <input type="text" id="contact-Subject" name="contact-Subject" class="form-control  text-white" required>
+                                <label for="contact-Subject" class="text-white"><h4>Subject</h4></label>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+
+                    <!-- Grid row -->
+                    <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-12">
+                            <div class="md-form">
+                                <textarea type="text" id="contact-message" name="contact-message" class="form-control md-textarea text-white" rows="3" required></textarea>
+                                <label for="contact-message" class="text-white"><h4>Your message</h4></label>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+                    <button class="button-success pure-button button-xlarge btn btn-blue btn-md">
+                        <i class="fa fa-paper-plane"></i>&nbsp;Send
+                    </button>
+                    <div style="display:none" class="thankyou_message">
+ <!-- You can customize the thankyou message by editing the code below -->
+ <h2><em>Thanks</em> for contacting us! We will get back to you soon!
+ </h2>
+</div>
+                </form>
+
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 text-center mt-4">
+
+                <ul class="list-unstyled mt-1 mb-0">
+                    <li>
+                        <i class="fa fa-map-marker fa-2x blue-text"></i>
+                        <p>Chennai,India</p>
+                    </li>
+                    <!-- <li>
+                        <i class="fa fa-phone fa-2x mt-4 blue-text"></i>
+                        <p></p>
+                    </li> -->
+                    <li>
+                        <i class="fa fa-envelope fa-2x mt-4 blue-text"></i>
+                        <p class="mb-0">vmaheysh@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+
+</section>
 <!--Section: contact-->
 
+<!-- <script data-cfasync="false" type="text/javascript"
+        src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script> -->
 <!--Section: contact-->
 
 </main>
@@ -781,33 +951,7 @@ transition-duration: 5s;
     <div class="container">
 
         <!-- Social buttons -->
-        <ul class="list-unstyled list-inline text-center">
-            <li class="list-inline-item">
-                <a class="btn-floating btn-fb mx-1">
-                    <i class="fab fa-facebook"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-tw mx-1">
-                    <i class="fab fa-twitter"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-gplus mx-1">
-                    <i class="fab fa-google-plus"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-li mx-1">
-                    <i class="fab fa-linkedin"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-dribbble mx-1">
-                    <i class="fab fa-dribbble"> </i>
-                </a>
-            </li>
-        </ul>
+
         <!-- Social buttons -->
 
     </div>
@@ -838,5 +982,7 @@ transition-duration: 5s;
 
 </footer>
 <!-- Footer -->
+<script data-cfasync="false" type="text/javascript"
+src="form-submission-handler.js"></script>
 </body>
 </html>
